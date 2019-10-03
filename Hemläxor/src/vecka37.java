@@ -10,6 +10,8 @@ public class vecka37 {
 		 String ålder = input.next();
 		 System.out.print("Adress: ");
 		 String adress = input.next();
+		 System.out.print("postnummer: ");
+		 String postnummer = input.next();
 		 System.out.print("Telefon: ");
 		 String telefon = input.next();
 		 
