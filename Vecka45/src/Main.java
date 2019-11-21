@@ -12,7 +12,7 @@ public class Main {
 
 		System.out.print (fahrenheitToCelsius(50));
 		System.out.print (kelvinToCelsius(0));
-		
+		System.out.print (fluidPressure(FluidTable.H2S04, 5));
 	}
 	
 	public static double fahrenheitToCelsius(double fahrenheit) {
@@ -23,5 +23,10 @@ public class Main {
 	public static double kelvinToCelsius(double kelvin) {
 		double Celsius = kelvin - 273.15;
 		return Celsius;
-	} 
+	}
+	
+	public static double fluidPressure(FluidTable fluid, double deep) {
+		double pressure = fluid.density * g_swe * deep;
+		return pressure;
+	}
 }
