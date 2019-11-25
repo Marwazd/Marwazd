@@ -12,8 +12,9 @@ public class Main {
 
 		System.out.print (fahrenheitToCelsius(50));
 		System.out.print (kelvinToCelsius(0));
-		System.out.print (fluidPressure(FluidTable.H2SO4, 5));
-		System.out.print (pressureUnderWater (5));
+		System.out.print (fluidPressure(FluidTable.H2SO4, 10));
+		System.out.print (pressureUnderWater (10));
+		System.out.print (kineticEnergy (2,2));
 	}
 	
 	public static double fahrenheitToCelsius(double fahrenheit) {
@@ -35,6 +36,12 @@ public class Main {
 		double pressure = FluidTable.WATER.density * g_swe * deep;
 		return pressure;
 	}
+	
+	public static double kineticEnergy(double mass, double velocity) {
+		double kineticEnergy = (mass * velocity / 2);
+		return kineticEnergy;
+	}
+	
 	
 	
 	
