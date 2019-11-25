@@ -12,7 +12,8 @@ public class Main {
 
 		System.out.print (fahrenheitToCelsius(50));
 		System.out.print (kelvinToCelsius(0));
-		System.out.print (fluidPressure(FluidTable.H2S04, 5));
+		System.out.print (fluidPressure(FluidTable.H2SO4, 5));
+		System.out.print (pressureUnderWater (5));
 	}
 	
 	public static double fahrenheitToCelsius(double fahrenheit) {
@@ -29,4 +30,12 @@ public class Main {
 		double pressure = fluid.density * g_swe * deep;
 		return pressure;
 	}
+	
+	public static double pressureUnderWater(double deep) {
+		double pressure = FluidTable.WATER.density * g_swe * deep;
+		return pressure;
+	}
+	
+	
+	
 }
