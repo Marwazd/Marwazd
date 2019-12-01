@@ -358,6 +358,17 @@ public class Main {
 		return G * (mass1 * mass2) / d;
 	}
 	
+	/**
+	 * A method that calculate the force that pulls in a spring using the spring constant (k) and the length of the spring.
+	 * @param k A variable for the spring constant.
+	 * @param l A variable for the length of the spring.
+	 * @return Returns the force that pulls in the spring.
+	 */
+	
+	public static double hooksLaugh(double k, double l) {
+		return (k * l);
+	}
+	
 	
 
 
