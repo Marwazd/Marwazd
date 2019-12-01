@@ -136,7 +136,19 @@ public class Main {
 		return gasMass;
 	}
 	
+	/**
+	 * A method that converts a certain volume of material into a mass.
+	 * @param solid The solid material.
+	 * @param volume The volume of the material in m^3.
+	 * @return
+	 */
 	
+	public static double volumeToMass3(SolidTable solid, double volume) {
+		double solidMass = 0;
+		solidMass = solid.density * volume;
+		return solidMass;
+	}
+
 	
 	
 	
