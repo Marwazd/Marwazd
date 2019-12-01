@@ -152,7 +152,7 @@ public class Main {
 	/**
 	 * A method that calculates the average speed using distance and time.
 	 * @param distance A variable on the distance in meters.
-	 * @param time A variable on time in seconds.
+	 * @param time A variable for time in seconds.
 	 * @return Returns the average speed in m/s.
 	 */
 	
@@ -180,6 +180,17 @@ public class Main {
 	
 	public static double svtTime(double distance, double velocity) {
 		return (distance / velocity);
+	}
+	
+	/**
+	 * A method that calculates work using force and distance.
+	 * @param force A variable for the force in Newton.
+	 * @param distance A variable for the distance in meters.
+	 * @return returns work in Newton meters (Nm).
+	 */
+	
+	public static double Work(double force, double distance) {
+		return (force * distance);
 	}
 
 
