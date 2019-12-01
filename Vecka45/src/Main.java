@@ -201,7 +201,19 @@ public class Main {
 	 */
 	
 	public static double Power(double work, double time) {
-		return(work/time);
+		return (work/time);
+	}
+	
+	/**
+	 * A method that calculates the amount of energy that required to heat a material till a specified number of degrees.
+	 * @param solid A variable for the material.
+	 * @param mass A variable for mass in kg.
+	 * @param deltaT A variable for the difference in temperature.
+	 * @return returns the amount of energy that required in joules (J).
+	 */
+	
+	public static double heat(SolidTable solid, double mass, double deltaT) {
+		return (solid.heatCapacity* mass* deltaT);
 	}
 
 
