@@ -201,7 +201,7 @@ public class Main {
 	 */
 	
 	public static double Power(double work, double time) {
-		return (work/time);
+		return (work / time);
 	}
 	
 	/**
@@ -213,8 +213,21 @@ public class Main {
 	 */
 	
 	public static double heat(SolidTable solid, double mass, double deltaT) {
-		return (solid.heatCapacity* mass* deltaT);
+		return (solid.heatCapacity * mass * deltaT);
 	}
+	
+	/**
+	 * A method that calculates the amount of energy that required to heat a certain mass of liquid till a specified number of degrees.
+	 * @param fluid variable for the fluid.
+	 * @param mass A variable for mass in kg.
+	 * @param deltaT A variable for the difference in temperature.
+	 * @return returns the amount of energy that required in J.
+	 */
+	
+	public static double heat2(FluidTable fluid, double mass, double deltaT) {
+		return (fluid.heatCapacity * mass * deltaT);
+	}
+
 
 
 
