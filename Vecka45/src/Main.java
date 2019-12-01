@@ -87,7 +87,7 @@ public class Main {
 	
 	/**
 	 * A method that calculates how high velocity an object can have if the object releases from a certain height.
-	 * @param height The height of the object is released from in m.
+	 * @param height The height of the object is released from in meters.
 	 * @return Returns the speed in m/s.
 	 */
 	
@@ -157,8 +157,20 @@ public class Main {
 	 */
 	
 	public static double averageSpeed(double distance, double time) {
-		return (distance/time);
+		return (distance / time);
 	}
+	
+	/**
+	 * A method that calculates distance using speed and time.
+	 * @param velocity A variable for the speed in m/s.
+	 * @param time A variable for the time in seconds.
+	 * @return returns the distance in meters.
+	 */
+	
+	public static double svtDistance(double velocity, double time) {
+		return (velocity * time);
+	}
+
 	
 	
 
