@@ -227,6 +227,18 @@ public class Main {
 	public static double heat2(FluidTable fluid, double mass, double deltaT) {
 		return (fluid.heatCapacity * mass * deltaT);
 	}
+	
+	/**
+	 * A method that calculates the amount of energy that required to heat a certain mass of gas till a specified number of degrees.
+	 * @param gas A variable for gas.
+	 * @param mass A variable for mass in kg.
+	 * @param deltaT A variable for the difference in temperature.
+	 * @return returns the amount of energy that required in J.
+	 */
+	
+	public static double heat3(GasTable gas, double mass, double deltaT) {
+		return (gas.heatCapacity * mass * deltaT);
+	}
 
 
 
