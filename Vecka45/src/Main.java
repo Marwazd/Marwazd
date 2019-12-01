@@ -40,6 +40,11 @@ public class Main {
 		
 		System.out.println("En studsboll som vager 1kg slapps fran 12 meters hojd och varje gang den nuddar marken tappar den 1% av sin energi. Hur manga ganger kommer bollen studsa i marken innan den inte studsar horge an 0.5 meter?\r\n");
 		System.out.println(numberOfBounces(12) + "ganger");
+		
+		System.out.println("Bestam kraften som drar i fjadern hos en fjader som är 9 cm langt om fjaderkonstanten ar 16 N/m");
+		/*Transform 9 cm = 0.09 m*/
+		/*F = 16 N/m * 0.09 m = 1.44N*/
+		System.out.println(hooksLaugh(16, 9) + "N");
 
 		
 		
@@ -351,7 +356,7 @@ public class Main {
 	 * @param mass1 A variable for the first mass.
 	 * @param mass2 A variable for the second mass.
 	 * @param d A variable for the diameter.
-	 * @return
+	 * @return Returns gravity force.
 	 */
 	
 	public static double gravityForce (double G, double mass1, double mass2, double d) {
@@ -362,6 +367,7 @@ public class Main {
 	 * A method that calculate the force that pulls in a spring using the spring constant (k) and the length of the spring.
 	 * @param k A variable for the spring constant.
 	 * @param l A variable for the length of the spring.
+	 * @param F A variable for the force that pulls in a spring.
 	 * @return Returns the force that pulls in the spring.
 	 */
 	
