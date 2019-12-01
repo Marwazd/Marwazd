@@ -345,6 +345,19 @@ public class Main {
 		return (mass * g);
 	}
 	
+	/**
+	 * A method that calculate the gravity force using the universal gravitational constant (G), two different mass for two different objects and the diameter (d) OR the radius (r^2). 
+	 * @param G A variable for the universal gravitational constant.
+	 * @param mass1 A variable for the first mass.
+	 * @param mass2 A variable for the second mass.
+	 * @param d A variable for the diameter.
+	 * @return
+	 */
+	
+	public static double gravityForce (double G, double mass1, double mass2, double d) {
+		return G * (mass1 * mass2) / d;
+	}
+	
 	
 
 
