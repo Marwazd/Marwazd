@@ -10,14 +10,6 @@ public class Main {
 	
 	public static void main(String[] args) {
 		/*TODO auto generated method stub*/
-
-		System.out.print (fahrenheitToCelsius(50));
-		System.out.print (kelvinToCelsius(0));
-		System.out.print (fluidPressure(FluidTable.H2SO4, 5));
-		System.out.print (pressureUnderWater (5));
-		System.out.print (kineticEnergy (2,2));
-		System.out.print (potentialEnergi (2,5));
-		System.out.print (fallSpeed (2.5));
 	}
 	
 	/**
@@ -103,6 +95,19 @@ public class Main {
 		double fallSpeed = 0;
 		fallSpeed = Math.sqrt(2 * g_swe * height);
 		return fallSpeed;
+	}
+	
+	/**
+	 * A method that calculates the difference between two given values.
+	 * @param first The first value.
+	 * @param last The second value.
+	 * @return Returns the difference between the values.
+	 */
+	
+	public static double delta(double first, double last) {
+		double delta = 0;
+		delta = last - first;
+		return delta;
 	}
 	
 	
