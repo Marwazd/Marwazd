@@ -12,8 +12,13 @@ public class Main {
 		/*TODO auto generated method stub*/
 		
 		System.out.println("Hur mycket vager 60 dm^3 jarn?"); 
-		/* 60 dm^3 is 0,06 m^3*/
+		/*60 dm^3 is 0,06 m^3*/
 		System.out.println(volumeToMass3(SolidTable.IRON,0.06)+"kg");
+		
+		System.out.println("ur langt hinner Tomas om han loper med medelhastigheten 2.7 m/s i 50 minuter?");
+		/*50 minutes is 3000 seconds*/
+		System.out.println(svtDistance(2.7,3000)+"meter");
+
 
 	}
 	
