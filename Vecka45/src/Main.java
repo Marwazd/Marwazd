@@ -9,7 +9,7 @@ public class Main {
 	
 	
 	public static void main(String[] args) {
-		/*TODO auto generated method stub*/
+		// TODO Auto-generated method stub
 		
 		System.out.println("Hur mycket vager 60 dm^3 jarn?"); 
 		/*60 dm^3 is 0,06 m^3*/
@@ -40,6 +40,7 @@ public class Main {
 		
 		System.out.println("En studsboll som vager 1kg slapps fran 12 meters hojd och varje gang den nuddar marken tappar den 1% av sin energi. Hur manga ganger kommer bollen studsa i marken innan den inte studsar horge an 0.5 meter?\r\n");
 		System.out.println(numberOfBounces(12) + "ganger");
+
 		
 		
 
@@ -195,7 +196,7 @@ public class Main {
 	 * @return Returns the average speed in m/s.
 	 */
 	
-	public static double averageSpeed(double distance, double time) {
+	public static double svtVelocity(double distance, double time) {
 		return (distance / time);
 	}
 	
@@ -288,6 +289,8 @@ public class Main {
 	public static double velocityToHeight(double velocity) {
 		return (Math.pow (velocity, 2) / ( 2 * g_swe));
 	}
+	
+	public static double 
 
 
 
