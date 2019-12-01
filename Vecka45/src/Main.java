@@ -37,9 +37,20 @@ public class Main {
 		/*Distance = 27.78 * 4.8 = 133,3 m*/
 		/*Work = Force * Distance = 580500 Nm*/
 		System.out.println(Power(580500, 4.8)+"w");
+		
+		System.out.println("En studsboll som vager 1kg slapps fran 12 meters hojd och varje gang den nuddar marken tappar den 1% av sin energi. Hur manga ganger kommer bollen studsa i marken innan den inte studsar horge an 0.5 meter?\r\n");
+		System.out.println(numberOfBounces(12) + "ganger");
+		
+		
+
 
 	}
-	
+
+	private static int numberOfBounces(int i) {
+		// TODO Auto-generated method stub
+		return 12;
+	}
+
 	/**
 	 * A method that converts degrees fahrenheit to degrees celsius. 
 	 * @param fahrenheit the value for fahrenheit.
