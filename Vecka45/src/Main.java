@@ -42,10 +42,19 @@ public class Main {
 		System.out.println(numberOfBounces(12) + "ganger");
 		
 		System.out.println("Bestam kraften som drar i fjadern hos en fjader som är 9 cm langt om fjaderkonstanten ar 16 N/m");
-		/*Transform 9 cm = 0.09 m*/
+		/*Transform: 9 cm = 0.09 m*/
 		/*F = 16 N/m * 0.09 m = 1.44N*/
 		System.out.println(hooksLaugh(16, 9) + "N");
-
+		
+		System.out.println("Hur stoe är kraften mellan två blyklot som väger 1 kg vardera om deras tyngdpunkter befinner sig på 1.0 dm avstånd från varandra?");
+		/*F = 6.67E-11 * (1.0 * 1.0) / 0.10^2 = 6.7 nM*/
+		System.out.println(gravityForce(6.67E-11, 1.0, 1.0, 0.01) + "nN");
+		
+		System.out.println("Hur manga meter hinner en bil på 1 sekund i hastigheten 90 km/h?");
+		/*Transform: 90 km = 90E3 m*/
+		/*Transform: 1 h = 60 min = 3600 s*/
+		/*v = 90000 m / 3600 s = 25 m/s*/
+		System.out.println(averageAcceleration(90000.0, 3600.0) + "m/s");
 		
 		
 
@@ -360,7 +369,7 @@ public class Main {
 	 */
 	
 	public static double gravityForce (double G, double mass1, double mass2, double d) {
-		return G * (mass1 * mass2) / d;
+		return (G * mass1 * mass2 / d);
 	}
 	
 	/**
