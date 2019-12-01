@@ -335,16 +335,17 @@ public class Main {
 	}
 	
 	/**
-	 * A method that calculate the gravity force in m/s^2 using mass and acceleration of gravity (g).
+	 * A method that calculate the weight force in m/s^2 using mass and and the constant of acceleration of gravity (g).
 	 * @param mass A variable for the mass.
 	 * @param g A variable for the acceleration of gravity.
-	 * @return Returns gravity force.
+	 * @return Returns weight force.
 	 */
 	
-	public static double gravityForce(double mass, double g) {
+	public static double weightForce(double mass, double g) {
 		return (mass * g);
 	}
-
+	
+	
 
 
 
