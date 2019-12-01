@@ -123,6 +123,21 @@ public class Main {
 		return fluidMass;
 	}
 	
+	/**
+	 * A method that converts a certain volume of gas into a mass.
+	 * @param gas The gas.
+	 * @param volume The volume of gas in m^3.
+	 * @return the mass of the gas in kg.
+	 */
+	
+	public static double volumeToMass2(GasTable gas, double volume) {
+		double gasMass = 0;
+		gasMass = gas.density * volume;
+		return gasMass;
+	}
+	
+	
+	
 	
 	
 	
