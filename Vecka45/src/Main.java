@@ -322,6 +322,17 @@ public class Main {
 	public static double averageAcceleration(double speed, double time) {
 		return (speed / time);
 	}
+	
+	/**
+	 * A method that calculate the force in N using mass and acceleration.
+	 * @param mass A variable for the mass
+	 * @param acceleration A variable for the acceleration. 
+	 * @return Returns the Force in N.
+	 */
+	
+	public static double Force(double mass, double acceleration) {
+		return (mass * acceleration);
+	}
 
 
 
