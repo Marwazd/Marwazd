@@ -192,6 +192,18 @@ public class Main {
 	public static double Work(double force, double distance) {
 		return (force * distance);
 	}
+	
+	/**
+	 * A method that calculates effect using work and time.
+	 * @param work A variable for work in Nm.
+	 * @param time A variable for time in seconds.
+	 * @return Returns effect in Watts (W).
+	 */
+	
+	public static double Power(double work, double time) {
+		return(work/time);
+	}
+
 
 
 	
