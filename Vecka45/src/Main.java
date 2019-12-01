@@ -22,6 +22,10 @@ public class Main {
 		System.out.println("Hur mycket energi kravs for att varma upp 4 liter vatten fran rumstemperatur (22 grader) till kokpunkten?");
 		/*4 liters water is 4 kg and the difference in temperature is 100 - 22 = 78 degrees*/
 		System.out.println(heat2(FluidTable.WATER, 4, 78)+"J");
+		
+		System.out.println("Hur stort ar det totala trycket 75 meter under havsytan?");
+		System.out.println(fluidPressure(FluidTable.WATER,75));
+
 
 
 	}
