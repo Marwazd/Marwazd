@@ -380,6 +380,17 @@ public class Main {
 		return (u * Fn);
 	}
 	
+	/**
+	 * A method that calculate the mechanical energy using the potential energy (Ep) and the kinetic energy (Ek).
+	 * @param Ep A variable for the potential energy.
+	 * @param Ek A variable for the kinetic energy.
+	 * @return Returns tha mechanical energy.
+	 */
+	
+	public static double MechanicalEnergy(double Ep, double Ek) {
+		return (Ep + Ek);
+	}
+	
 	
 
 
