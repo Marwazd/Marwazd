@@ -2,13 +2,14 @@
 public class Main {
 
 	static double g_swe = 9.82;
-	static double G = 6.6740831 * 10 * Math.exp(-11);
+	static double G = 6.6740831 * 1E-11;
 	static double R = 8.314462175;
-	static int p_0 = 1000;
-	static int c = 299792458;
+	static double p_0 = 101.3E3;
+	static double c = 2.99792458;
 	
 	
 	public static void main(String[] args) {
+		/*TODO auto generated method stub*/
 
 		System.out.print (fahrenheitToCelsius(50));
 		System.out.print (kelvinToCelsius(0));
@@ -16,37 +17,108 @@ public class Main {
 		System.out.print (pressureUnderWater (5));
 		System.out.print (kineticEnergy (2,2));
 		System.out.print (potentialEnergi (2,5));
+		System.out.print (fallSpeed (2.5));
 	}
+	
+	/**
+	 * A method that converts degrees fahrenheit to degrees celsius. 
+	 * @param fahrenheit the value for fahrenheit.
+	 * @return Returns the temperature in Celsius.
+	 */
 	
 	public static double fahrenheitToCelsius(double fahrenheit) {
 		double Celsius = (fahrenheit-32)* 5 / 9;
 		return Celsius;
 	}
 	
+	/**
+	 * A method that converts degrees Kelvin to degrees Celsius.
+	 * @param kelvin the value for kelvin.
+	 * @return Returns the temperature in Celsius.
+	 */
+	
 	public static double kelvinToCelsius(double kelvin) {
 		double Celsius = kelvin - 273.15;
 		return Celsius;
 	}
 	
+	/**
+	 * A method that calculates the fluid pressure in a liquid at a certain depth.
+	 * @param fluid The value of the density of a liquid.
+	 * @param deep the value for the depth.
+	 * @return returns the fluid pressure.
+	 */
+	 	
 	public static double fluidPressure(FluidTable fluid, double deep) {
-		double pressure = fluid.density * g_swe * deep;
-		return pressure;
+		double thePressure = 0;
+		thePressure = fluid.density * g_swe * deep;
+		return thePressure;
 	}
+	
+	/**
+	 * A method that calculates the liquid pressure in water at a certain depth.
+	 * @param deep The depth you measure the pressure in.
+	 * @return returns the fluid pressure under water.
+	 */
 	
 	public static double pressureUnderWater(double deep) {
-		double pressure = FluidTable.WATER.density * g_swe * deep;
-		return pressure;
+		double underWaterPressure = 0;
+		underWaterPressure = FluidTable.WATER.density * g_swe * deep;
+		return underWaterPressure;
 	}
 	
+	/**
+	 * A method that calculates kinetic energy using mass and velocity.
+	 * @param mass The mass of an object in kg.
+	 * @param velocity The speed of an object in m/s.
+	 * @return Returns the kinetic energy kgm/s.
+	 */
+	
 	public static double kineticEnergy(double mass, double velocity) {
-		double kineticEnergy = (mass * velocity / 2);
+		double kineticEnergy = 0;
+		kineticEnergy = (velocity * mass) / 2;
 		return kineticEnergy;
 	}
 	
+	/**
+	 * A method that calculates potential energy using mass and height.
+	 * @param mass The mass of an object in kg.
+	 * @param height The height at which the object is in relation to the zero point.
+	 * @return Returns the potential energy of the object.
+	 */
+	
 	public static double potentialEnergi(double mass, double height) {
-		double potentialEnergi = (mass * g_swe * height);
+		double potentialEnergi = 0;
+		potentialEnergi = (mass * g_swe * height);
 		return potentialEnergi;
 	}
+	
+	/**
+	 * A method that calculates how high velocity an object can have if the object releases from a certain height.
+	 * @param height The height of the object is released from in m.
+	 * @return Returns the speed in m/s.
+	 */
+	
+	public static double fallSpeed(double height) {
+		double fallSpeed = 0;
+		fallSpeed = Math.sqrt(2 * g_swe * height);
+		return fallSpeed;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
