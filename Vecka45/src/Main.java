@@ -140,7 +140,7 @@ public class Main {
 	 * A method that converts a certain volume of material into a mass.
 	 * @param solid The solid material.
 	 * @param volume The volume of the material in m^3.
-	 * @return
+	 * @return Returns the mass in kg.
 	 */
 	
 	public static double volumeToMass3(SolidTable solid, double volume) {
@@ -148,6 +148,19 @@ public class Main {
 		solidMass = solid.density * volume;
 		return solidMass;
 	}
+	
+	/**
+	 * A method that calculates the average speed using distance and time.
+	 * @param distance A variable on the distance in meters.
+	 * @param time A variable on time in seconds.
+	 * @return Returns the average speed in m/s.
+	 */
+	
+	public static double averageSpeed(double distance, double time) {
+		return (distance/time);
+	}
+	
+	
 
 	
 	
