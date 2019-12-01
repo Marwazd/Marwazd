@@ -369,6 +369,17 @@ public class Main {
 		return (k * l);
 	}
 	
+	/**
+	 * A method that calculate the sliding friction using the coefficient of friction (u) and the normal force (Fn).
+	 * @param u A variable for the coefficient of friction.
+	 * @param Fn A variable for the normal force.
+	 * @return Returns the sliding friction.
+	 */
+	
+	public static double slidingFriction(double u, double Fn) {
+		return (u * Fn);
+	}
+	
 	
 
 
