@@ -110,6 +110,19 @@ public class Main {
 		return delta;
 	}
 	
+	/**
+	 * A method that converts a certain volume of liquid into a mass.
+	 * @param fluid The fluid.
+	 * @param volume The volume in m^3.
+	 * @return Returns the mass of the liquid in kg.
+	 */
+	
+	public static double volumeToMass(FluidTable fluid, double volume) {
+		double fluidMass = 0;
+		fluidMass = fluid.density * volume;
+		return fluidMass;
+	}
+	
 	
 	
 	
