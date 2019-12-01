@@ -29,9 +29,14 @@ public class Main {
 		System.out.println("Tomas som ar 180cm lang kastar upp en boll med massan 250 gram i luften sa den far starthastigheten 60 km/h. Hur hogt kommer bollen?");
 		/*Transform: 60 km/h = 16.67 m/s and 180 cm = 1.8 m*/
 		System.out.println(velocityToHeight(16.67) + 1.8 + "meter");
-
-
-
+		
+		System.out.println("En bil med massan 735kg accelererar med konstant acceleration fran 0-100 pa 4.8 sekunder. Hur stor effekt har bilens motor uppnatt?");
+		/*100 km/h  / 3.6 = 27.78 m/s*/
+		/*acceleration = 27.78 / 4.8 = 5.79 m^2*/
+		/*Force = m*a = 735 * 5.79 = 4 353,4 N*/
+		/*Distance = 27.78 * 4.8 = 133,3 m*/
+		/*Work = Force * Distance = 580500 Nm*/
+		System.out.println(Power(580500, 4.8)+"w");
 
 	}
 	
