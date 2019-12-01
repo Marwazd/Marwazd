@@ -10,6 +10,11 @@ public class Main {
 	
 	public static void main(String[] args) {
 		/*TODO auto generated method stub*/
+		
+		System.out.println("Hur mycket vager 60 dm^3 jarn?"); 
+		/* 60 dm^3 is 0,06 m^3*/
+		System.out.println(volumeToMass3(SolidTable.IRON,0.06)+"kg");
+
 	}
 	
 	/**
