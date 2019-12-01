@@ -325,13 +325,24 @@ public class Main {
 	
 	/**
 	 * A method that calculate the force in N using mass and acceleration.
-	 * @param mass A variable for the mass
+	 * @param mass A variable for the mass.
 	 * @param acceleration A variable for the acceleration. 
 	 * @return Returns the Force in N.
 	 */
 	
 	public static double Force(double mass, double acceleration) {
 		return (mass * acceleration);
+	}
+	
+	/**
+	 * A method that calculate the gravity force in m/s^2 using mass and acceleration of gravity (g).
+	 * @param mass A variable for the mass.
+	 * @param g A variable for the acceleration of gravity.
+	 * @return Returns gravity force.
+	 */
+	
+	public static double gravityForce(double mass, double g) {
+		return (mass * g);
 	}
 
 
