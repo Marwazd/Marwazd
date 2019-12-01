@@ -300,6 +300,17 @@ public class Main {
 	public static double averageSpeed(double distance, double time) {
 		return (distance / time);
 	}
+	
+	/**^
+	 * A method that calculate the density.
+	 * @param mass A variable for the mass.
+	 * @param volume A variable for the volume.
+	 * @return Returns the density.
+	 */
+	
+	public static double density(double mass, double volume) {
+		return (mass / volume);
+	}
 
 
 
