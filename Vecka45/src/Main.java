@@ -18,6 +18,10 @@ public class Main {
 		System.out.println("ur langt hinner Tomas om han loper med medelhastigheten 2.7 m/s i 50 minuter?");
 		/*50 minutes is 3000 seconds*/
 		System.out.println(svtDistance(2.7,3000)+"meter");
+		
+		System.out.println("Hur mycket energi kravs for att varma upp 4 liter vatten fran rumstemperatur (22 grader) till kokpunkten?");
+		/*4 liters water is 4 kg and the difference in temperature is 100 - 22 = 78 degrees*/
+		System.out.println(heat2(FluidTable.WATER, 4, 78)+"J");
 
 
 	}
