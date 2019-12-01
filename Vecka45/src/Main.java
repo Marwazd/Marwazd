@@ -170,6 +170,18 @@ public class Main {
 	public static double svtDistance(double velocity, double time) {
 		return (velocity * time);
 	}
+	
+	/**
+	 * A method that calculates time using distance and speed.
+	 * @param distance A variable for the distance in meters.
+	 * @param velocity A variable for the speed in m/s.
+	 * @return returns the time in seconds.
+	 */
+	
+	public static double svtTime(double distance, double velocity) {
+		return (distance / velocity);
+	}
+
 
 	
 	
