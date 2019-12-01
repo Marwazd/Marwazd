@@ -290,7 +290,16 @@ public class Main {
 		return (Math.pow (velocity, 2) / ( 2 * g_swe));
 	}
 	
-	public static double 
+	/**
+	 * A method that calculates the average speed.
+	 * @param distance A variable for the distance.
+	 * @param time A variable for the time.
+	 * @return Returns the average speed.
+	 */
+	
+	public static double averageSpeed(double distance, double time) {
+		return (distance / time);
+	}
 
 
 
