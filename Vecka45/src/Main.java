@@ -291,7 +291,7 @@ public class Main {
 	}
 	
 	/**
-	 * A method that calculates the average speed.
+	 * A method that calculates the average speed using distance and time.
 	 * @param distance A variable for the distance.
 	 * @param time A variable for the time.
 	 * @return Returns the average speed.
@@ -302,7 +302,7 @@ public class Main {
 	}
 	
 	/**^
-	 * A method that calculate the density.
+	 * A method that calculate the density using mass and volume.
 	 * @param mass A variable for the mass.
 	 * @param volume A variable for the volume.
 	 * @return Returns the density.
@@ -310,6 +310,17 @@ public class Main {
 	
 	public static double density(double mass, double volume) {
 		return (mass / volume);
+	}
+	
+	/**
+	 * A method that calculate the average acceleration using speed and time.
+	 * @param speed A variable for the speed.
+	 * @param time A variable for the time.
+	 * @return Returns the average acceleration.
+	 */
+	
+	public static double averageAcceleration(double speed, double time) {
+		return (speed / time);
 	}
 
 
