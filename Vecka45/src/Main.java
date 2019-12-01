@@ -384,11 +384,22 @@ public class Main {
 	 * A method that calculate the mechanical energy using the potential energy (Ep) and the kinetic energy (Ek).
 	 * @param Ep A variable for the potential energy.
 	 * @param Ek A variable for the kinetic energy.
-	 * @return Returns tha mechanical energy.
+	 * @return Returns the mechanical energy.
 	 */
 	
 	public static double MechanicalEnergy(double Ep, double Ek) {
 		return (Ep + Ek);
+	}
+	
+	/**
+	 * A method that calculate the momentum using the mass and the speed.
+	 * @param mass A variable for the mass.
+	 * @param speed A variable for the speed.
+	 * @return Returns the momentum.
+	 */
+	
+	public static double momentum(double mass, double speed) {
+		return (mass * speed);
 	}
 	
 	
