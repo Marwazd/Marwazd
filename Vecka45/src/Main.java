@@ -239,6 +239,17 @@ public class Main {
 	public static double heat3(GasTable gas, double mass, double deltaT) {
 		return (gas.heatCapacity * mass * deltaT);
 	}
+	
+	/**
+	 * A method that calculates how high an object is going upwards at a certain speed.
+	 * @param velocity A variable for the speed in m/s.
+	 * @return returns the height in meters.
+	 */
+	
+	public static double velocityToHeight(double velocity) {
+		return (Math.pow (velocity, 2) / ( 2 * g_swe));
+	}
+
 
 
 
