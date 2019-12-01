@@ -25,6 +25,11 @@ public class Main {
 		
 		System.out.println("Hur stort ar det totala trycket 75 meter under havsytan?");
 		System.out.println(fluidPressure(FluidTable.WATER,75));
+		
+		System.out.println("Tomas som ar 180cm lang kastar upp en boll med massan 250 gram i luften sa den far starthastigheten 60 km/h. Hur hogt kommer bollen?");
+		/*Transform: 60 km/h = 16.67 m/s and 180 cm = 1.8 m*/
+		System.out.println(velocityToHeight(16.67) + 1.8 + "meter");
+
 
 
 
